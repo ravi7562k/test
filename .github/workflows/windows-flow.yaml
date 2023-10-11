@@ -1,0 +1,13 @@
+name: testing windows workflow
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  testing_job:
+    runs-on: windows_latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: runningg windows output
+        run: hostname
