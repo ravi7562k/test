@@ -32,8 +32,8 @@ jobs:
         run: echo Hello, world! This is my "$secre".
       
       - run: |
-        echo $secre > secrets.txt
-        cat secrets.txt
+          echo $secre > secrets.txt
+          cat secrets.txt
         
 
 
