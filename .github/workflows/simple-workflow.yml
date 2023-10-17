@@ -32,7 +32,7 @@ jobs:
         run: echo Hello, world! This is my "$secre".
       
       - run: |
-          echo ${{secrets.RAVISECRET}} | sed 's/./& /g'
+          echo ${{secrets.RAVISECRET}} | sed 's/./&/g'
     
         
 
