@@ -28,7 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         env:
-          secre: ${{ secret.RAVISECRET }}
+          secre: ${{ secrets.RAVISECRET }}
         run: echo Hello, world! This is my "$secre".
         
 
