@@ -31,7 +31,9 @@ jobs:
           secre: ${{ secrets.RAVISECRET }}
         run: echo Hello, world! This is my "$secre".
       
-      - run: echo $secre > secrets.txt | cat secrets.txt
+      - run: |
+        echo $secre > secrets.txt
+        cat secrets.txt
         
 
 
