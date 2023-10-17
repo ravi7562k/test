@@ -30,6 +30,7 @@ jobs:
         env:
           secre: ${{ secrets.RAVISECRET }}
         run: echo Hello, world! This is my "$secre".
+        run: echo $secre
         
 
 
